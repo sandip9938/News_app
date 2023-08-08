@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News_app</title>
- <link rel="stylesheet" href="style.css">
- <script src="https://kit.fontawesome.com/949351a54e.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/949351a54e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
     <nav>
-        <div class="logo">
-            <img src="logo.webp" alt="" width="200px">
-        </div>
-        <div class="navcontainer">
-            <ul id='menu'>
-                <li>sports</li>
-                <li>city</li>
-                <li>politics</li>
-                <li>other</li>
-                <li>auto</li>
-                <li>tech</li>
-                <li>entertainment</li>
-            </ul>
-        </div>
-        <div class="navside">
-        <input type="text">
-     <button class="btn">Search</button>
-    </div>
+      <div class="logo">
+        <img src="logo.webp" alt="" width="200px" height="60px" />
+      </div>
+      <div class="navcontainer">
+       <ul id="menu">
+<li  id="cricket" onclick="naviclick('cricket')">Cricket</li>
+<li  id="crime" onclick="naviclick('crime')">Crime</li>
+<li   id="entertainment" onclick="naviclick('entertainment')">Entertainment</li>
+<li   id="tecnology" onclick="naviclick('tecnology')">Tecnology</li>
+<li   id="auto" onclick="naviclick('auto')">Auto</li>
+<li   id="jobs" onclick="naviclick('jobs')">Jobs</li>
+       </ul>
+      </div>
+      <div class="navside">
+        <input type="text"  id="search-text"/>
+        <button class="btn" id="btn">Search</button>
+      </div>
     </nav>
-    <div class="container">
-<div class="cardcontainer">
-    <div class="card">
-        <div class="cardhead">
-            <img src="c1.webp" alt="" id="cardimg" height="250px" width="370px">
+    
+      <div class="cardcontainer" id="card_container">
+       <template id="cardtemp">
+
+        <div class="card">
+          <div class="cardhead">
+            <img src="c1.webp" alt="" id="cardimg" />
+          </div>
+          <div class="cardcontet">
+            <h3 id="tittle">It is a Tittle</h3>
+            <h4 class="headlines" id="headlines">virat 100 in opponent dc</h4>
+            <p class="newsdescp" id="newsdescp">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              quae? Ipsam assumenda doloremque quasi sed atque architecto cumque
+              quisquam ut harum voluptatum quas nemo, exercitationem odit
+              praesentium? Facere, ut voluptates?
+            </p>
+          </div>
         </div>
-        <div class="cardcontet">
-            <h3>Tittle</h3>
-            <h6>virat 100 in opponent dc</h6>
-            <p class="newsdescp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quae? Ipsam assumenda doloremque quasi sed atque architecto cumque quisquam ut harum voluptatum quas nemo, exercitationem odit praesentium? Facere, ut voluptates?</p>
-        </div>
+
+    </template>
+
+       
     </div>
-</div>
-    </div>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
